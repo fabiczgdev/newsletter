@@ -1,0 +1,166 @@
+html,
+body {
+    margin: auto;
+    padding: auto;
+}
+
+body {
+    background-color: #333549;
+    color: #282c47;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+
+}
+a{
+    text-decoration: none;
+}
+.wrapper {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    min-height: 60vh;
+    font-size: 18px;
+}
+
+.container-form {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-form h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.container-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container-form li {
+    margin: 5px 0;
+}
+
+.container-form img {
+    margin-right: 15px;
+
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.container-form form label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container-form form input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    margin: 15px 0;
+}
+
+.btn {
+    border: none;
+    background: #232742;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn:hover {
+    box-shadow: 8px 10px 30px #ff537947;
+    transition: .3s;
+    background: linear-gradient(90deg, rgba(250, 86, 121, 1) 0%, rgba(240, 111, 71, 1) 100%);
+}
+
+.container-img {
+    width: 50%;
+    background-image: url("images/illustration-sign-up-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.success{
+    width: 30%;
+}
+.container-success
+ {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-success img{
+    width: 50px;
+}
+.container-success h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+div.feedback {
+    display: none;
+    font-size: 14px;
+    color: red;
+    font-weight: 500;
+  }
+
+  input.invalid~div.feedback {
+    display: block;
+  }
+
+  input.invalid {
+    border: 1px solid red !important;
+    background: #ff00000d;
+  }
+
+  input.invalid::placeholder {
+    color: red
+  }
+@media (max-width: 767px) {
+    body{
+        background-color: #fff;
+    }
+    .container {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 15px;
+    }
+    .container, .container-form, .container-img {
+        width: 100%;
+    }
+    .container-img {
+        height: 250px;
+        background-size: cover;
+    }
+    .container-form, .container-success{
+        padding: 0px;
+    }
+    .container-success h1, .container-form h1{
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+}
